@@ -1,0 +1,16 @@
+body{
+    background-color: beige;
+}
+
+main h1{
+    color:red,
+}
+
+figure{
+    object-fit: cover;
+}
+
+figure img{
+    height: 10rem;
+    width:10rem,
+}
