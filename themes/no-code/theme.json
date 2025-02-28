@@ -8,9 +8,7 @@
 			"defaultPalette": false,
 			"defaultGradients": false,
 			"defaultDuotone": false,
-			"custom": true,
 			"customGradient": true,
-			"customDuotone": true,
 			"palette": [
 				{
 					"slug": "base",
@@ -36,6 +34,16 @@
 					"slug": "accent",
 					"color": "#ff4081",
 					"name": "Accent"
+				},
+				{
+					"slug": "warning",
+					"color": "#ff9800",
+					"name": "Warning"
+				},
+				{
+					"slug": "success",
+					"color": "#4caf50",
+					"name": "Success"
 				}
 			],
 			"gradients": [
@@ -48,8 +56,14 @@
 					"slug": "primary-to-secondary",
 					"gradient": "linear-gradient(135deg, #0073aa 0%, #00a0d2 100%)",
 					"name": "Primary to Secondary"
+				},
+				{
+					"slug": "accent-to-warning",
+					"gradient": "linear-gradient(135deg, #ff4081 0%, #ff9800 100%)",
+					"name": "Accent to Warning"
 				}
-			]
+			],
+			"custom": true
 		},
 		"layout": {
 			"contentSize": "1200px",
@@ -57,13 +71,19 @@
 		},
 		"spacing": {
 			"units": ["px", "em", "rem", "vh", "vw", "%"],
-			"blockGap": true
+			"blockGap": true,
+			"margin": true,
+			"padding": true
 		},
 		"border": {
-			"radius": true
+			"color": true,
+			"radius": true,
+			"width": true
 		},
 		"typography": {
 			"customFontSize": true,
+			"lineHeight": true,
+			"letterSpacing": true,
 			"fontFamilies": [
 				{
 					"name": "System (Roboto, Segoe UI, Ubuntu)",
@@ -85,7 +105,8 @@
 	},
 	"styles": {
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--inter)"
+			"fontFamily": "var(--wp--preset--font-family--inter)",
+			"lineHeight": "1.6"
 		},
 		"color": {
 			"background": "var(--wp--preset--color--base)",
@@ -101,6 +122,6 @@
 				"bottom": "1rem",
 				"left": "1rem"
 			}
-			}
+		}
 	}
 }
