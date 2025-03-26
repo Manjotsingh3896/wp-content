@@ -102,6 +102,7 @@ img {
     height: auto;
     border-radius: 8px;
 }
+
 .customer-reviews {
     display: flex;
     flex-wrap: wrap;
@@ -128,12 +129,12 @@ img {
 
 /* Blog Container Width */
 .blog-container {
-    max-width: 800px; /* Set your desired width */
+    max-width: 800px; /*  width */
     margin: 0 auto; /* Center the container */
     padding: 20px; /* Add some padding for spacing */
 }
 
-/* Optional: Style Blog Posts */
+/*  Style Blog Posts */
 .blog-container article {
     margin-bottom: 30px;
     padding-bottom: 20px;
