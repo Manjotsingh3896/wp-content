@@ -65,51 +65,62 @@ body {
 .wp-block-button__link {
     background-color: var(--wp--preset--color--primary);
     color: var(--wp--preset--color--contrast);
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: bold;
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+    display: inline-block; /* Make the button inline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s; /* Smooth color change */
 }
 
 .wp-block-button__link:hover {
-    background-color: var(--wp--preset--color--secondary);
+    background-color: var(--wp--preset--color--secondary); /* Change color on hover */
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    color: var(--wp--preset--color--base);
-    margin-top: 0;
+    color: var(--wp--preset--color--base); /* Heading color */
+    margin-top: 0; /* Remove top margin */
 }
 
 /* Paragraphs */
 p {
-    color: var(--wp--preset--color--contrast);
-    margin-bottom: 1rem;
+    color: var(--wp--preset--color--contrast); /* Paragraph color */
+    margin-bottom: 1rem; /* Add space below paragraphs */
 }
 
 /* Blockquotes */
 blockquote {
-    border-left: 4px solid var(--wp--preset--color--primary);
-    padding-left: 1rem;
-    color: var(--wp--preset--color--base);
-    font-style: italic;
+    border-left: 4px solid var(--wp--preset--color--primary); /* Colored border */
+    padding-left: 1rem; /* Indentation */
+    color: var(--wp--preset--color--base); /* Quote color */
+    font-style: italic; /* Italic text */
 }
 
 /* Images */
 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Prevent stretching */
+    border-radius: 8px; /* Rounded corners */
 }
-
-.customer-reviews {
-    display: flex;
+/* Navigation */
+.site-navigation {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between navigation items */
+    align-items: center; /* Vertically center items */
+    background-color: var(--wp--preset--color--primary); /* Navigation background color */
+    padding: 10px 20px; /* Padding inside navigation */
+    border-radius: 8px; /* Rounded corners */
+}
+.customer-reviews { 
+    display: flex; /* Flexbox layout */ 
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.review {
+/* Review Styles */
+.review  {
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 8px;
@@ -136,16 +147,16 @@ img {
 
 /*  Style Blog Posts */
 .blog-container article {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
+    margin-bottom: 30px; /* Add space between posts */
+    padding-bottom: 20px; /* Add space below posts */
     border-bottom: 1px solid #ddd;
 }
-
+/*  Style Blog Posts */
 .blog-container h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
-
+/*  Style Blog Posts */
 .blog-container p {
     font-size: 16px;
     line-height: 1.6;
